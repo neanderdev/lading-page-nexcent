@@ -1,0 +1,1206 @@
+/* Variáveis Globais CSS */
+:root {
+  --color-primary: #4caf4f;
+  --color-primary-click: #388e3b;
+  --color-secondary: #263238;
+
+  --color-white: #fff;
+
+  --color-silver-100: #f5f7fa;
+
+  --color-gray-100: #d9dbe1;
+  --color-gray-200: #89939e;
+  --color-gray-300: #717171;
+  --color-gray-400: #525b60;
+  --color-gray-500: #4d4d4d;
+  --color-gray-900: #18191f;
+
+  --color-tint-5: #e8f5e9;
+
+  --shadow-2: 0rem 0.2rem 0.4rem 0rem rgba(171, 190, 209, 0.2);
+  --shadow-8: 0rem 0.8rem 1.6rem 0rem rgba(171, 190, 209, 0.4);
+
+  font-size: 62.5%;
+}
+
+/* Config CSS */
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 1.6rem;
+
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  background-color: var(--color-white);
+  color: var(--color-gray-300);
+}
+
+/* Navbar */
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 3rem 12rem 3rem 10.5rem;
+
+  background-color: var(--color-silver-100);
+}
+
+nav.navbar div.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+nav.navbar div.links a {
+  color: var(--color-gray-900);
+
+  font-weight: 400;
+  line-height: 2.4rem;
+
+  transition: opacity 300ms;
+}
+
+nav.navbar div.links a:not(.active):hover {
+  opacity: 0.5;
+}
+
+nav.navbar div.links a.active {
+  font-weight: 500;
+}
+
+nav.navbar div.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+nav.navbar div.buttons-wrapper button {
+  display: flex;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  border: none;
+  border-radius: 0.6rem;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+
+  transition: opacity 300ms;
+}
+
+nav.navbar div.buttons-wrapper button:hover {
+  opacity: 0.75;
+}
+
+nav.navbar div.buttons-wrapper button:focus {
+  border: 2px solid var(--color-gray-500);
+}
+
+nav.navbar div.buttons-wrapper button:active {
+  background-color: var(--color-primary-click);
+}
+
+nav.navbar div.buttons-wrapper button.outline {
+  display: flex;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background-color: var(--color-silver-100);
+  color: var(--color-primary);
+
+  border: 0.1rem solid var(--color-primary);
+  border-radius: 0.6rem;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+
+  transition: opacity 300ms;
+}
+
+/* Section Home */
+section.home {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+/* Section Home - Hero */
+section.home div.hero {
+  padding: 9.6rem 14.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 10.4rem;
+
+  background-color: var(--color-silver-100);
+}
+
+section.home div.hero div.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  gap: 3.2rem;
+}
+
+section.home div.hero div.hero-info div.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 1.6rem;
+}
+
+section.home div.hero div.hero-info div.text h1 {
+  color: var(--color-gray-500);
+
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 7.6rem;
+}
+
+section.home div.hero div.hero-info div.text h1 span {
+  color: var(--color-primary);
+}
+
+section.home div.hero div.hero-info div.text > span {
+  color: var(--color-gray-300);
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+section.home div.hero div.hero-info button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.4rem 3.2rem;
+
+  background-color: var(--color-primary);
+
+  border: none;
+  border-radius: 0.4rem;
+
+  color: var(--color-white);
+
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  transition: opacity 300ms;
+}
+
+section.home div.hero div.hero-info button:hover {
+  opacity: 0.75;
+}
+
+section.home div.hero div.hero-info button:focus {
+  border: 2px solid var(--color-gray-500);
+}
+
+section.home div.hero div.hero-info button:active {
+  background-color: var(--color-primary-click);
+}
+
+/* Section Home - Clients */
+section.home div.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  width: 100%;
+
+  padding: 0 14.4rem;
+}
+
+section.home div.clients div.clients-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+section.home div.clients div.clients-info h2 {
+  color: var(--color-gray-500);
+
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+}
+
+section.home div.clients div.clients-info span {
+  color: var(--color-gray-300);
+
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+section.home div.clients div.clients-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+section.home div.clients div.clients-logo img {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Section Home - Community */
+section.home div.community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  width: 100%;
+}
+
+section.home div.community div.community-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+section.home div.community div.community-text h2 {
+  color: var(--color-gray-500);
+
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+
+  text-align: center;
+
+  width: 54.2rem;
+}
+
+section.home div.community div.community-text span {
+  color: var(--color-gray-300);
+
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+section.home div.community div.community-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 0 14.4rem;
+}
+
+section.home div.community div.community-info div.community-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+
+  width: 30rem;
+  padding: 2.4rem 3.2rem;
+
+  background-color: var(--color-white);
+
+  border-radius: 0.8rem;
+
+  box-shadow: var(--shadow-2);
+}
+
+section.home
+  div.community
+  div.community-info
+  div.community-container
+  div.community-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+section.home
+  div.community
+  div.community-info
+  div.community-container
+  div.community-info
+  div.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 5rem;
+  height: 5rem;
+
+  flex-shrink: 0;
+
+  border-radius: 1.8rem 0.5rem 1rem 0.5rem;
+
+  background-color: var(--color-tint-5);
+}
+
+section.home
+  div.community
+  div.community-info
+  div.community-container
+  div.community-info
+  div.icon
+  img {
+  width: 4rem;
+  height: 4rem;
+
+  flex-shrink: 0;
+}
+
+section.home
+  div.community
+  div.community-info
+  div.community-container
+  div.community-info
+  h3 {
+  color: var(--color-gray-500);
+
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+
+  text-align: center;
+
+  width: 23.1rem;
+}
+
+section.home div.community div.community-info div.community-container span {
+  color: var(--color-gray-300);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  text-align: center;
+}
+
+/* Section Body */
+section.body {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.8rem;
+
+  padding-top: 4.2rem;
+}
+
+/* Section Body - Unlock */
+section.body div.unlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 14.4rem;
+}
+
+section.body div.unlock div.unlock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+  flex-shrink: 0;
+
+  width: 66.1rem;
+}
+
+section.body div.unlock div.unlock-container div.unlock-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+
+  width: 60.1rem;
+}
+
+section.body div.unlock div.unlock-container div.unlock-info h2 {
+  color: var(--color-gray-500);
+
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+}
+
+section.body div.unlock div.unlock-container div.unlock-info span {
+  color: var(--color-gray-300);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+section.body div.unlock div.unlock-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1.4rem 3.2rem;
+
+  background-color: var(--color-primary);
+
+  border: 0;
+  border-radius: 0.4rem;
+
+  color: var(--color-white);
+
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  transition: opacity 300ms;
+}
+
+section.body div.unlock div.unlock-container button:hover {
+  opacity: 0.75;
+}
+
+section.body div.unlock div.unlock-container button:focus {
+  border: 2px solid var(--color-gray-500);
+}
+
+section.body div.unlock div.unlock-container button:active {
+  background-color: var(--color-primary-click);
+}
+
+/* Section Body - Achievements */
+section.body div.achievements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 6.4rem 14.4rem;
+
+  width: 100%;
+
+  background-color: var(--color-silver-100);
+}
+
+section.body div.achievements div.achievements-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  flex-shrink: 0;
+
+  width: 54rem;
+}
+
+section.body div.achievements div.achievements-text h2 {
+  color: var(--color-gray-500);
+
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+
+  width: 40.8rem;
+}
+
+section.body div.achievements div.achievements-text h2 span {
+  color: var(--color-primary);
+}
+
+section.body div.achievements div.achievements-text > span {
+  color: var(--color-gray-900);
+
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+section.body div.achievements div.achievements-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+
+section.body div.achievements div.achievements-info div.achievements-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+section.body
+  div.achievements
+  div.achievements-info
+  div.achievements-container
+  img {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+section.body
+  div.achievements
+  div.achievements-info
+  div.achievements-container
+  div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section.body
+  div.achievements
+  div.achievements-info
+  div.achievements-container
+  div
+  h3 {
+  color: var(--color-gray-500);
+
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+
+section.body
+  div.achievements
+  div.achievements-info
+  div.achievements-container
+  div
+  span {
+  color: var(--color-gray-300);
+
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+/* Section Body - Calender */
+section.body div.calender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 14.4rem;
+}
+
+section.body div.calender div.calender-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+  flex-shrink: 0;
+
+  width: 66.1rem;
+}
+
+section.body div.calender div.calender-info div.calender-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+
+  width: 60.1rem;
+}
+
+section.body div.calender div.calender-text h2 {
+  color: var(--color-gray-500);
+
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+}
+
+section.body div.calender div.calender-text span {
+  color: var(--color-gray-300);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+section.body div.calender div.calender-info button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.4rem 3.2rem;
+
+  background-color: var(--color-primary);
+
+  border: none;
+  border-radius: 0.4rem;
+
+  color: var(--color-white);
+
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  transition: opacity 300ms;
+}
+
+section.body div.calender div.calender-info button:hover {
+  opacity: 0.75;
+}
+
+section.body div.calender div.calender-info button:focus {
+  border: 2px solid var(--color-gray-500);
+}
+
+section.body div.calender div.calender-info button:active {
+  background-color: var(--color-primary-click);
+}
+
+/* Section Body - Customers */
+section.body div.customers {
+  display: flex;
+  align-items: center;
+  gap: 7.8rem;
+
+  padding: 3.2rem 14.4rem;
+
+  background-color: var(--color-silver-100);
+}
+
+section.body div.customers img.customers-illustration {
+  box-shadow: var(--shadow-8);
+}
+
+section.body div.customers div.customers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+  flex: 1 0 0;
+}
+
+section.body div.customers div.customers-container div.customers-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 1.6rem;
+}
+
+section.body div.customers div.customers-container div.customers-content span {
+  color: var(--color-gray-300);
+
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+section.body
+  div.customers
+  div.customers-container
+  div.customers-content
+  div.customers-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 0.8rem;
+}
+
+section.body
+  div.customers
+  div.customers-container
+  div.customers-content
+  div.customers-text
+  h4 {
+  color: var(--color-primary);
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
+section.body
+  div.customers
+  div.customers-container
+  div.customers-content
+  div.customers-text
+  span {
+  color: var(--color-gray-200);
+
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+section.body div.customers div.customers-container div.customers-info {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 3.2rem;
+}
+
+section.body
+  div.customers
+  div.customers-container
+  div.customers-info
+  div.customers-clients {
+  display: flex;
+  align-items: center;
+  gap: 4.1rem;
+}
+
+section.body
+  div.customers
+  div.customers-container
+  div.customers-info
+  div.customers-clients
+  img {
+  width: 3rem;
+  height: 3rem;
+}
+
+section.body div.customers div.customers-container div.customers-info a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1 0 0;
+
+  padding: 0.8rem;
+
+  color: var(--color-primary);
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+
+  transition: opacity 300ms;
+}
+
+section.body div.customers div.customers-container div.customers-info a:hover {
+  opacity: 0.75;
+}
+
+section.body div.customers div.customers-container div.customers-info a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Section Body - Community Updates */
+section.body div.community-updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  width: 100%;
+}
+
+section.body div.community-updates div.community-updates-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+section.body div.community-updates div.community-updates-text h2 {
+  color: var(--color-gray-500);
+
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+
+  text-align: center;
+}
+
+section.body div.community-updates div.community-updates-text span {
+  color: var(--color-gray-300);
+
+  font-weight: 400;
+  line-height: 2.4rem;
+
+  text-align: center;
+
+  width: 62.8rem;
+}
+
+section.body div.community-updates div.community-updates-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 14.4rem;
+
+  width: 100%;
+}
+
+section.body
+  div.community-updates
+  div.community-updates-content
+  div.community-updates-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+section.body
+  div.community-updates
+  div.community-updates-content
+  div.community-updates-container
+  div {
+  position: absolute;
+  bottom: -7.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+
+  background-color: var(--color-silver-100);
+
+  border-radius: 0.8rem;
+
+  box-shadow: var(--shadow-8);
+}
+
+section.body
+  div.community-updates
+  div.community-updates-content
+  div.community-updates-container
+  div
+  h4 {
+  color: var(--color-gray-300);
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+
+  text-align: center;
+
+  width: 28.5rem;
+}
+
+section.body
+  div.community-updates
+  div.community-updates-content
+  div.community-updates-container
+  div
+  a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 0.8rem;
+
+  padding: 0.8rem;
+
+  color: var(--color-primary);
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+
+  transition: opacity 300ms;
+}
+
+section.body
+  div.community-updates
+  div.community-updates-content
+  div.community-updates-container
+  div
+  a:hover {
+  opacity: 0.75;
+}
+
+section.body
+  div.community-updates
+  div.community-updates-content
+  div.community-updates-container
+  div
+  a
+  img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Section Footer */
+section.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  margin-top: 15rem;
+  padding: 3.2rem 0 3.2rem 0;
+
+  background-color: var(--color-silver-100);
+}
+
+section.footer h1 {
+  color: var(--color-secondary);
+
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 7.6rem;
+
+  text-align: center;
+
+  width: 88.7rem;
+}
+
+section.footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 1.4rem 3.2rem;
+
+  background-color: var(--color-primary);
+
+  border: none;
+  border-radius: 0.4rem;
+
+  color: var(--color-white);
+
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  transition: opacity 300ms;
+}
+
+section.footer button:hover {
+  opacity: 0.75;
+}
+
+section.footer button:focus {
+  border: 2px solid var(--color-gray-500);
+}
+
+section.footer button:active {
+  background-color: var(--color-primary-click);
+}
+
+section.footer button svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 12.5rem;
+
+  padding: 6.4rem 16.5rem;
+
+  background-color: var(--color-secondary);
+}
+
+footer div.footer-company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+footer div.footer-company-info div.footer-company-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+footer div.footer-company-info div.footer-company-info-text span {
+  color: var(--color-silver-100);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+footer div.footer-company-info div.footer-company-info-redes-sociais {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+footer div.footer-company-info div.footer-company-info-redes-sociais a {
+  transition: opacity 300ms;
+}
+
+footer div.footer-company-info div.footer-company-info-redes-sociais a:hover {
+  opacity: 0.5;
+}
+
+footer div.footer-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+footer div.footer-links div.footer-links-company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+footer div.footer-links div.footer-links-company h4 {
+  color: var(--color-white);
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
+footer div.footer-links div.footer-links-company div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+footer div.footer-links div.footer-links-company a {
+  color: var(--color-silver-100);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  transition: opacity 300ms;
+}
+
+footer div.footer-links div.footer-links-company a:hover {
+  opacity: 0.5;
+}
+
+footer div.footer-links div.footer-links-support {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+footer div.footer-links div.footer-links-support h4 {
+  color: var(--color-white);
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
+footer div.footer-links div.footer-links-support div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+footer div.footer-links div.footer-links-support a {
+  color: var(--color-silver-100);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  transition: opacity 300ms;
+}
+
+footer div.footer-links div.footer-links-support a:hover {
+  opacity: 0.5;
+}
+
+footer div.footer-links div.footer-links-send-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+footer div.footer-links div.footer-links-send-mail h4 {
+  color: var(--color-white);
+
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
+footer div.footer-links div.footer-links-send-mail div.input-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 4rem;
+
+  background-color: var(--color-gray-400);
+
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+}
+
+footer div.footer-links div.footer-links-send-mail div.input-wrapper input {
+  width: 100%;
+
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+
+  color: var(--color-gray-100);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  padding: 1.4rem 3rem 1.4rem 1.4rem;
+}
+
+footer
+  div.footer-links
+  div.footer-links-send-mail
+  div.input-wrapper
+  input::placeholder {
+  color: var(--color-gray-100);
+}
+
+footer div.footer-links div.footer-links-send-mail div.input-wrapper button {
+  position: absolute;
+  top: 1.1rem;
+  right: 0.5rem;
+  z-index: 10;
+
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+}
